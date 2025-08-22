@@ -1,7 +1,5 @@
 services:
   neki:
-    stdin_open: true
-    tty: true
     image: test-docker-sigterm:latest
     container_name: test-docker-sigterm
     restart: unless-stopped
