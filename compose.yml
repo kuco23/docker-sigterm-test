@@ -5,7 +5,7 @@ services:
     image: test-docker-sigterm:latest
     container_name: test-docker-sigterm
     restart: unless-stopped
-    command: "./main.sh"
-    stop_grace_period: 5s
+    command: "./main-fixed.sh"
+    stop_grace_period: 12s
     volumes:
       - "./log:/usr/src/app/log"
